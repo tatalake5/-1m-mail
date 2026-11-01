@@ -18,7 +18,7 @@ not_found_handling = "404-page"
 [[d1_databases]]
 binding = "DB"
 database_name = "de5_mailhub"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "23c4bf05-a5b1-46c8-ae0c-1cc45ad97617"
 
 # 每 5 分钟清理过期收件箱与邮件
 [triggers]
