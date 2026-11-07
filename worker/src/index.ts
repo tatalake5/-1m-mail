@@ -442,12 +442,12 @@ async function handleScheduled(env: Env): Promise<void> {
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-    DOMAIN = env.MAIL_DOMAIN || "1m.de5.net";
+    DOMAIN = env.MAIL_DOMAIN || "unlxdw.dpdns.org";
     return app.fetch(request, env, ctx);
   },
 
   async email(message: ForwardableEmailMessage, env: Env, ctx: ExecutionContext): Promise<void> {
-    DOMAIN = env.MAIL_DOMAIN || "1m.de5.net";
+    DOMAIN = env.MAIL_DOMAIN || "unlxdw.dpdns.org";
     try {
       await handleEmail(message, env);
     } catch (err) {
@@ -456,7 +456,7 @@ export default {
   },
 
   async scheduled(controller: ScheduledController, env: Env, ctx: ExecutionContext): Promise<void> {
-    DOMAIN = env.MAIL_DOMAIN || "1m.de5.net";
+    DOMAIN = env.MAIL_DOMAIN || "unlxdw.dpdns.org";
     try {
       await handleScheduled(env);
     } catch (err) {
