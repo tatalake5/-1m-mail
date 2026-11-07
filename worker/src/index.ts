@@ -16,7 +16,7 @@ export interface Env {
 }
 
 /* 收件域名：可在 wrangler.toml [vars] 或 dashboard 环境变量中配置 MAIL_DOMAIN 覆盖 */
-let DOMAIN = "1m.de5.net";
+let DOMAIN = "unlxdw.dpdns.org";
 const DEFAULT_TTL_MIN = 60;
 const TTL_WHITELIST: Record<string, number> = { "10": 10, "60": 60, "1440": 1440 };
 const MAX_MESSAGES_PER_INBOX = 100; // 单收件箱保留上限，防刷爆
